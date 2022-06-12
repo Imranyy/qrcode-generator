@@ -2,7 +2,7 @@
     "name":"Qr Code Generator",
     "short_name":"Qr Generator",
     "description":"A Qr code generator App",
-    "start_url":"/generator/index.html",
+    "start_url":"/index.html",
     "display":"standalone",
     "background_color":"#34dbcd",
     "theme_color":"#f2f2f2",

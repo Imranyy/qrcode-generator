@@ -1,10 +1,10 @@
 
 const statitCacheName='site-static'
 const assests=[
-    "/generator/",
-    "/generator/index.html",
-    "/generator/app.js",
-    "/generator/style.css"
+    "/",
+    "/index.html",
+    "/app.js",
+    "/style.css"
 ]
 //install sw
 self.addEventListener('install',evt=>{
@@ -23,7 +23,7 @@ self.addEventListener('activate',evt=>{
 //fetch event
 self.addEventListener('fetch',evt=>{
     evt.respondWith(
-        caches.match(evt.resquest).then(
+        caches.match(evt.request).then(
             cacheRes=>{return cacheRes || fetch(evt.resquest) }
         )
     )
