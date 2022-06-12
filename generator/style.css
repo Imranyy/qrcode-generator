@@ -12,6 +12,7 @@ body{
     background: #3498DB;
 }
 .wrapper{
+    margin: 60% auto;
     height: 260px;
     background: #f2f2f2;
     max-width: 410px;
@@ -68,3 +69,38 @@ header p{
     pointer-events: auto;
     transition: opacity 0.5s 0.05s ease;
 }    
+@media only screen and (max-width : 600px){
+    .wrapper{
+        height: 260px;
+        background: #f2f2f2;
+        width: 310px;
+        border-radius: 7px;
+        padding: 16px 25px;
+        transition: height 0.2s ease;
+    }
+
+}
+@media only screen and (max-width:400px) {
+   .wrapper{
+        height: 260px;
+        background: #f2f2f2;
+        width: 250px;
+        border-radius: 7px;
+        padding: 16px 25px;
+        transition: height 0.2s ease;
+    }
+    header h1{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    header p{
+        margin-top: 5px;
+        color: #474747;
+        font-size: 13px;
+    }
+    .form input{
+        font-size: 13px;
+        padding: 0 17px;
+        border: 1px solid #999;
+    }
+}
