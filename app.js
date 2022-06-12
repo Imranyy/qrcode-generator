@@ -8,7 +8,7 @@ generateBtn.addEventListener('click',()=>{
     let qrValue=qrInput.value;
     //console.log(qrValue)
     if(!qrValue) return;
-    generateBtn.innerText="Generatin Qr Code..."
+    generateBtn.innerText="Generating Qr Code..."
     qrImg.src=`https://api.qrserver.com/v1/create-qr-code/?size=170x170&data=${qrValue}`;
     qrImg.addEventListener('load',()=>{
         wrapper.classList.add('active');
